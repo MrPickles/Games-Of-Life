@@ -97,6 +97,10 @@ public class DrawGame {
 	final JCheckBox s6 = new JCheckBox("Survives: 6");
 	final JCheckBox s7 = new JCheckBox("Survives: 7");
 	final JCheckBox s8 = new JCheckBox("Survives: 8");
+	
+	//Default settings
+	b3.doClick(); s2.doClick(); s3.doClick();
+	
 	subMenu.add(b0);
 	subMenu.add(b1);
 	subMenu.add(b2);
@@ -150,7 +154,7 @@ public class DrawGame {
 
 	JPanel infoPanel = new JPanel();
 	infoPanel.setLayout(new BoxLayout(infoPanel, BoxLayout.PAGE_AXIS));
-	JButton pause = new JButton("Pause/Unpause");
+	JButton pause = new JButton("Play/Stop");
 	infoPanel.add(pause);
 	pause.addActionListener(new ActionListener() {
 	    public void actionPerformed(ActionEvent e) {
